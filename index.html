@@ -1,0 +1,1660 @@
+<!doctype html>
+<html lang="es">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Berlitz Perú - Kids&Teens</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon-32x32.png">
+    <style>
+        .jm-loadingpage {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 999999999;
+            background-color: #004FEF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .jm-loadingpage table {
+            text-align: center;
+        }
+    </style>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/revolution/navigation.min.css">
+    <link rel="stylesheet" href="assets/css/revolution/settings.min.css">
+    <link rel="stylesheet" href="assets/css/cmln-style.css?v=202601">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.min.css">
+
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PGFZW8S');
+    </script>
+    <!-- End Google Tag Manager -->
+
+
+
+
+</head>
+
+<body onload="loaded();">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGFZW8S" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="t_header"></div>
+
+    <!-- loader -->
+    <div class="jm-loadingpage ">
+        <table border="0">
+            <tr>
+                <td>
+                    <img class="img-fluid" src="assets/img/berlitz-logo.png" loading="lazy">
+                </td>
+            </tr>
+            <tr>
+                <td><span class="loader"></span></td>
+            </tr>
+        </table>
+    </div>
+    <!-- end loader -->
+
+
+    <!-- Para bordes redondeados en poligonos -->
+    <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+        version="1.1">
+        <defs>
+            <filter id="round">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                    result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+            </filter>
+        </defs>
+    </svg>
+
+
+
+
+
+
+
+
+
+
+    <!-- menu xs -->
+    <div id="div_menu_xs" class="container menu-xs ">
+        <div class="container">
+            <div class="row ">
+
+
+
+                <div class="col-12 item cerrar">
+                    <i id="btn-menu-xs-cerrar" class="fa-solid fa-circle-xmark fa-cmln"></i>
+                </div>
+                <!--<div class="col-12 item ">
+                    <a href="javascript:click_section('seccion_facts')" class="i_menu menu_1 ">Facts</a>
+                </div>-->
+                <div class="col-12 item ">
+                    <a href="javascript:click_section('seccion_testimonio')" class="i_menu menu_1 ">Testimonial</a>
+                </div>
+                <div class="col-12 item ">
+                    <a href="javascript:click_section('seccion_como_logramos')"
+                        class="i_menu menu_2 ">Características</a>
+                </div>
+                <div class="col-12 item ">
+                    <a href="javascript:click_section('seccion_curso')" class="i_menu menu_3 ">Curso</a>
+                </div>
+                <div class="col-12 item ">
+                    <a href="javascript:click_section('metodo')" class="i_menu menu_5 ">Método Berlitz</a>
+                </div>
+                <div class="col-12 item ">
+                    <a href="javascript:click_section('seccion_sabias_que')" class="i_menu menu_6 ">Beneficios</a>
+                </div>
+                <div class="col-12 item ">
+                    <a href="javascript:click_section('seccion_formulario')" class="i_menu menu_9 ">Registrate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end menu xs -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Banner Principal -->
+    <div class="banner_principal">
+
+        <div class="fondo" style="background-image: url(https://github.com/enis190/assets_dev/blob/main/img/HEAD%2013-16.png?raw=true); background-size: cover;
+     ">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 order-md-last">
+                        <div class="persona">
+                            <!-- <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-teens-nina-13-16.png"  class="personas_dsk" style="max-width:435px;"> -->
+                            <a href="javascript:click_section('seccion_formulario')">
+                                <img src="https://github.com/enis190/assets_dev/blob/main/img/HEAD%2013-16mob.png?raw=true"
+                                    class="personas_mob" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <!-- <div class="tienes_el_talento">
+                         <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/banner-principal-tienes-talento.png" alt="">
+                     </div>-->
+                        <!-- <div class="left_side left_side_static">
+                            <div class="subtitulo">
+                                Activa su
+                                <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids_ingles_banner.png"
+                                    class="palabra_ingles"><br>
+                                <span>
+                                    Activa su futuro
+                                    <div class="flecha"><img
+                                            src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/flecha-amarilla.png"
+                                            alt=""></div>
+                                </span>
+                            </div>
+
+                            <div class="titular">
+                                <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-teens-13-16-titulo.png"
+                                    alt="">
+                            </div>
+
+                            <div class="hashtag">
+                                <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-future.png"
+                                    alt="">
+                            </div>
+                            <div class="cta img-fluid">
+                                <a href="javascript:click_section('seccion_formulario')">
+                                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/btn-kids-pe.png"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="estrella_left">
+            <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-teens-4-8-estrella.png" alt="">
+         </div>-->
+
+
+        <div class="barra_inferior_banner" style="background-color: #615CFB; color:#ffffff;">
+            Curso de inglés para adolescentes de 13 a 17 años
+        </div>
+        <div class="barra_inferior_banner" style="background-color: #3CDF86; color: #00287A;">
+            100% Online con profesor en vivo
+        </div>
+
+    </div>
+    <!-- Banner Principal Fin -->
+
+
+
+    <!--<div class="container-fluid banner_principal_temp">
+        <div class="row">
+            <div class="col-12" style="padding: 0px;">
+                <a href="javascript:click_section('seccion_formulario')">
+                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/berlitz-pe-landing-grupales-banner-principal-desktop.png" alt="" class="img-fluid d-none d-sm-block" style="width: 100%;">
+                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/berlitz-pe-landing-grupales-banner-principal-mobile.png" alt="" class="img-fluid d-block d-sm-none"
+                        style="width: 100%;">
+                </a>
+
+            </div>
+        </div>
+    </div>-->
+
+    <!-- MENU -->
+    <div class="seccion_menu_desktop d-none d-lg-block">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+
+                    <ul>
+                        <!-- <li><a href="javascript:click_section('seccion_facts')" class="i_menu menu_1 " id="btn_facts">Facts</a></li>-->
+                        <li><a href="javascript:click_section('seccion_testimonio')" class="i_menu menu_1 "
+                                id="btn_testimomnios">Testimonial</a></li>
+                        <li><a href="javascript:click_section('seccion_como_logramos')" class="i_menu menu_2 "
+                                id="btn_como_logramos">Características</a></li>
+                        <li><a href="javascript:click_section('seccion_curso')" class="i_menu menu_3 "
+                                id="btn_curso">Curso</a></li>
+                        <li><a href="javascript:click_section('metodo')" class="i_menu menu_5 " id="btn_metodo">Método
+                                Berlitz</a></li>
+                        <li><a href="javascript:click_section('seccion_sabias_que')" class="i_menu menu_6 "
+                                id="btn_beglobal">Beneficios</a></li>
+                        <li><a href="javascript:click_section('seccion_formulario')" class="i_menu menu_9 "
+                                id="btn_registrate">Regístrate</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- END MENU -->
+
+
+    <!-- FORM -->
+    <div class="seccion_formulario formulario" id="form_principal"
+        style="background-image: url(https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/kidteens-bg-FORM.png);">
+        <div class="container-fluid ">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-md-5 d-none d-sm-block">
+                        <article class="">
+                            <p class="completa">
+                                Regístrate para conocer la <span>Promo del Mes y aprovecha hasta 6 cuotas sin
+                                    intereses</span>
+                            </p>
+
+                            <div class="tarjeta">
+                                <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-tarjetas.png"
+                                    alt="">
+                            </div>
+
+                            <p class="completa completa_2">
+
+                                ¡Activa su inglés <br><span>ahora!</span>
+                            </p>
+
+                        </article>
+                    </div>
+                    <div class="col-md-7 contenedor_caja_form">
+
+
+                        <div class="caja">
+                            <div class="txt d-block d-sm-none">
+                                <p class="completa">
+                                    Regístrate para conocer la <span>Promo del Mes y aprovecha hasta 6 cuotas sin
+                                        intereses</span>
+                                </p>
+
+                                <div class="tarjeta">
+                                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/berlitz-pe-grupales-tarjetas.png"
+                                        alt="">
+                                </div>
+
+                                <p class="completa completa_2">
+
+                                    ¡Activa su inglés <span>ahora!</span>
+                                </p>
+                            </div>
+
+                            <div class="c-hs-form">
+
+
+                                <!-- FORM HS -->
+                                <div id="hs_form_target_widget_1614708359277"></div>
+
+                                <script
+                                    src="https://peru.berlitzuavp.live/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script>
+
+                                <!--[if lte IE 8]>
+                <script charset="utf-8" src="https://js.hsforms.net/forms/v2-legacy.js"></script>
+                <![endif]-->
+
+                                <script data-hs-allowed="true"
+                                    src="https://peru.berlitzuavp.live/_hcms/forms/v2.js"></script>
+
+                                <script data-hs-allowed="true">
+                                    var options = {
+                                        portalId: '9068661',
+                                        formId: '17d41948-eeeb-45ff-92a5-336ed61134c8',
+                                        formInstanceId: '4595',
+                                        pageId: '114415670820',
+                                        region: 'na1',
+
+
+
+
+                                        pageName: "Berlitz Per\u00FA - Teens",
+
+
+                                        redirectUrl: "https://berlitz-marketing.com.pe/gracias-teens",
+
+
+
+
+
+                                        css: '',
+                                        target: '#hs_form_target_widget_1614708359277',
+
+
+
+
+
+                                        contentType: "landing-page",
+
+
+
+                                        formsBaseUrl: '/_hcms/forms/',
+
+
+
+                                        formData: {
+                                            cssClass: 'hs-form stacked hs-custom-form'
+                                        },
+                                        onFormReady: function ($form) {
+                                            $('.hs-fieldtype-intl-phone select').val('PE');
+                                            $('.hs-fieldtype-intl-phone select').trigger('change');
+                                        }
+                                    };
+
+                                    options.getExtraMetaDataBeforeSubmit = function () {
+                                        var metadata = {};
+
+
+                                        if (hbspt.targetedContentMetadata) {
+                                            var count = hbspt.targetedContentMetadata.length;
+                                            var targetedContentData = [];
+                                            for (var i = 0; i < count; i++) {
+                                                var tc = hbspt.targetedContentMetadata[i];
+                                                if (tc.length !== 3) {
+                                                    continue;
+                                                }
+                                                targetedContentData.push({
+                                                    definitionId: tc[0],
+                                                    criterionId: tc[1],
+                                                    smartTypeId: tc[2]
+                                                });
+                                            }
+                                            metadata["targetedContentMetadata"] = JSON.stringify(targetedContentData);
+                                        }
+
+                                        return metadata;
+                                    };
+
+                                    hbspt.forms.create(options);
+                                </script>
+                                <!-- END FORM HS -->
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- END FORM -->
+
+
+
+
+    <!-- Grupo de Edades  -->
+
+
+
+    <section class="seccion_grupo_edades">
+        <div class="arco_superior">
+            <svg width="1408" height="209" viewBox="0 0 1408 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M1484 0C1484 55.2976 1401.61 108.33 1254.96 147.432C1108.3 186.533 909.399 208.5 702 208.5C494.601 208.5 295.696 186.533 149.043 147.432C2.3891 108.33 -80 55.2977 -80 3.14826e-05L702 0L1484 0Z"
+                    fill="#00BDFF" />
+            </svg>
+            <div class="cruz_azul">
+                <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-teens-cruz-azul.png"
+                    alt="">
+            </div>
+
+            <div class="txt">
+                Entre los 13 y 17 años, el inglés se convierte en una necesidad funcional para:
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-teens-grupo-edades-txt-1.png"
+                        class="txt_1">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-teens-grupo-edades-txt-2.png"
+                        class="txt_2">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-teens-grupo-edades-txt-3.png"
+                        class="txt_3">
+                </div>
+            </div>
+        </div>
+        <div class="bola_roja">
+            <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-teens-bola-roja-2.png"
+                alt="">
+        </div>
+        <div class="arco_inferior">
+            <svg width="1408" height="192" viewBox="0 0 1408 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M682.5 99.5C1073.5 97.5 1324.5 32.5 1408 0V191.268H0V13C68 35.5 293.363 101.49 682.5 99.5Z"
+                    fill="#00BDFF" />
+            </svg>
+            <div class="txt">
+                En esta etapa, el inglés es clave para construir ventaja e invertir en el futuro.
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Grupo de Edades FIN -->
+
+    <!-- Testimonio -->
+    <!--IMAGENES DE FONDO
+     https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids_pe_fondo_testimonios_desktop.png
+     https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids_pe_fondo_testimonios_mobil.png
+     -->
+
+    <div class="container-fluid seccion_testimonio" id="seccionTestimonio"
+        style="background-image: url(https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/kidsteens-bg-testimonios.png);">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="testimonio_persona">
+                                <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids_pe_caricatura_testimonio.png"
+                                    class="img-fluid d-none d-sm-block" style="max-width: 250px;" alt="">
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="texto">
+                                <h2 class="mt-md-4">Te presentamos a Salvador,</h2>
+                                <p class="mb-3">actual alumno Berlitz, y a su mamá Úrsula, quien le da las herramientas
+                                    necesarias para construir su futuro.
+                                    Escucha su testimonio. <span>¡Dale Play!</span></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="yt-carousel" id="ytCarousel">
+                        <div class="yt-track">
+                            <div class="yt-slide d-none d-sm-block" data-video-id="dT27Mfk6HXQ">
+                                <button class="yt-poster" type="button" aria-label="Play video">
+                                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids_pe_caratula_testimonios.png"
+                                        alt="Video 1" loading="lazy" />
+                                    <span class="yt-play"></span>
+                                </button>
+                            </div>
+                            <div class="yt-slide d-block d-sm-none" data-video-id="hmUuQyOMxOE">
+                                <button class="yt-poster" type="button" aria-label="Play video">
+                                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-caratula-mob.png"
+                                        alt="Video 1" loading="lazy" />
+                                    <span class="yt-play"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonio Fin -->
+
+
+
+    <!-- COMO LOGRAMOS -->
+    <div class="seccion_como_logramos" id="seccionLogramos">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>
+                        ¿Cómo logramos que nuestros alumnos aprendan mientras se divierten?
+                    </h2>
+                </div>
+                <div class="col-12">
+                    <div class="lista_items">
+                        <div class="row">
+                            <div class="col-12 col-md-4 px-0 px-md-3">
+                                <article>
+                                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-logros-13-18-item1.png"
+                                        alt="" class="img-fluid d-none d-md-block">
+                                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids_pe_como_lo_logramos_1_mobil.png"
+                                        alt="" class="img-fluid d-block d-md-none w-100">
+                                </article>
+                            </div>
+                            <div class="col-12 col-md-4 px-0 px-md-3">
+                                <article>
+                                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-logros-13-18-item2.png"
+                                        alt="" class="img-fluid d-none d-md-block">
+                                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids_pe_como_lo_logramos_2_mobil.png"
+                                        alt="" class="img-fluid d-block d-md-none">
+                                </article>
+                            </div>
+                            <div class="col-12 col-md-4 px-0 px-md-3">
+                                <article>
+                                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-logros-13-18-item3.png"
+                                        alt="" class="img-fluid d-none d-md-block">
+                                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids_pe_como_lo_logramos_3_mobil.png"
+                                        alt="" class="img-fluid d-block d-md-none">
+
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <h2>Avance real que se activa en cada clase.</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="cara">
+            <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kidsteens-logramos-cara-13-16.png"
+                alt="">
+        </div>
+    </div>
+    <!-- COMO LOGRAMOS FIN -->
+
+    <!-- CURSO -->
+    <div class="seccion_curso" id="seccionCurso">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="left_side d_dsk">
+                        <div class="logo_curso">
+                            <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids_pe_logo-green.png"
+                                alt="" class="img-fluid w-60">
+                        </div>
+                        <div class="cursos_profesor_en_vivo">
+                            <img
+                                src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids_pe_profesor_en_vivo.png">
+                        </div>
+                    </div>
+                    <div class="left_side d_mob">
+                        <div class="cursos_profesor_en_vivo">
+                            <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kidsteens-curso-online-mob.png"
+                                alt="" class="img-fluid w-60">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="texto">
+                        <span>Un programa diseñado para ellos:</span>
+                    </div>
+                    <div class="lista_items">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <article class="bottom_article last_article">
+                                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-seccion-curso-item-1.png"
+                                        alt="">
+                                    <div class="texto">
+                                        <span>Metodología inmersiva y participativa:</span> clases 100 % en inglés en
+                                        las que los adolescentes socializan con alumnos de su misma edad.
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-6">
+                                <article class="bottom_article last_article">
+                                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-seccion-curso-item-2.png"
+                                        alt="">
+                                    <div class="texto">
+                                        <span>Herramientas didácticas y lúdicas:</span> mejoran la comprensión y
+                                        retención del contenido, asegurando un aprendizaje más robusto.
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-6">
+                                <article class="bottom_article last_article">
+                                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-curso-item-3.png"
+                                        alt="">
+                                    <div class="texto">
+                                        <span>Profesor en vivo con fluidez nativa:</span> que expone al adolescente
+                                        desde el primer día a pronunciación, ritmo y entonación reales.
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-6">
+                                <article class="bottom_article last_article">
+                                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-curso-item-4.png"
+                                        alt="">
+                                    <div class="texto">
+                                        <span>Feedback personalizado</span> y motivador.
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="texto">
+                        Más que un curso de inglés, una <span>habilidad</span> que crece con ellos.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <a href="javascript:click_section('seccion_formulario')">
+                <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/btn-kids-pe.png"
+                    class="img-fluid mx-auto" alt="" style="max-width: 280px;">
+            </a>
+        </div>
+    </div>
+    </div>
+    <!-- CURSO FIN -->
+
+
+    <!-- METODO -->
+    <div class="seccion_metodo">
+        <div id="contenido_5" class="container c-container metodo" id="seccionMetodo">
+
+            <div class="row">
+                <div class="col-md-5 txt">
+
+                    <div class="row">
+                        <div class="col-sm-6 offset-sm-3 col-md-10 offset-md-2">
+                            <picture>
+
+                                <source
+                                    srcset="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids_pe_metodo.png"
+                                    type="image/png">
+                                <img class="img-fluid"
+                                    data-src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids_pe_metodo.png"
+                                    loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h3>
+                        El Método Berlitz®
+                    </h3>
+
+                    <div class="txt_desktop d-none d-sm-block">
+                        <p>para niños y adolescentes les permite aprender inglés o cualquier otro idioma de forma
+                            <strong>natural, activa y progresiva.</strong><br> Desde el primer día, los alumnos
+                            escuchan, comprenden y usan el idioma objetivo en situaciones reales, siempre acompañados
+                            por un instructor en vivo.
+
+                        <p>Cada clase sigue un ciclo claro y motivador, logrando avances visibles no solo en el idioma,
+                            sino también en la <strong>confianza para expresarse.</strong> Así, el inglés se transforma
+                            en una herramienta que usan con naturalidad y que los acompañará para toda la vida.</p>
+
+
+                    </div>
+
+                    <div class="txt_mobile d-block d-sm-none">
+                        <p>para niños y adolescentes les permite aprender inglés o cualquier otro idioma de forma
+                            <strong>natural, activa y progresiva.</strong><br> Desde el primer día, los alumnos
+                            escuchan, comprenden y usan el idioma objetivo en situaciones reales, siempre acompañados
+                            por un instructor en vivo.
+
+                        <p>Cada clase sigue un ciclo claro y motivador, logrando avances visibles no solo en el idioma,
+                            sino también en la <strong>confianza para expresarse.</strong> Así, el inglés se transforma
+                            en una herramienta que usan con naturalidad y que los acompañará para toda la vida.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- END METODO -->
+
+
+
+
+
+
+
+
+    <div id="header_page" class="container-fluid header">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-4 col-md-2 logo d-block d-sm-none">
+                    <picture>
+                        <source srcset="assets/img/berlitz-logo.png" type="image/png">
+                        <img class="img-fluid" data-src="assets/img/berlitz-logo.png" loading="lazy">
+                    </picture>
+                </div>
+                <div class="col-md-5 offset-md-3 call">
+
+                    <a id="btn-menu-xs-abrir" class="btn-menu d-block d-lg-none"><i class="fa-solid fa-bars"></i>
+                        <span>MENU</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SABIAS QUE -->
+    <!--IMAGENES DE FONDO
+ https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/SAB%C3%8DAS%20QU%C3%89%20(2).png
+ https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/SAB%C3%8DAS%20QU%C3%89%20(3).png
+ -->
+    <section class="seccion_sabias_que">
+
+        <div class="container">
+            <div class="row align-items-start">
+
+                <div class="col-12 col-md-4 sabias-que__intro">
+                    <div class="texto_amarillo">
+                        Es momento de consolidar su inglés para ampliar y fortalecer sus oportunidades de mañana
+                    </div>
+
+                    <div class="texto_img">
+                        <div class="cinta">
+                            <svg width="1213" height="651" viewBox="0 0 1213 651" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M101.43 -321.778C94.3022 -356.427 75.9395 -388.576 47.8586 -410.914C19.799 -433.254 -15.3276 -443.988 -50.346 -440.701C-85.3644 -437.415 -117.881 -420.333 -141.293 -393.162C-164.728 -365.989 -176.788 -330.985 -177.345 -295.615C-177.345 -295.615 -177.345 -295.615 -177.345 -295.615C-176.666 -259.713 -173.082 -228.548 -168.282 -197.842C-123.985 63.4612 15.4136 295.324 214.55 464.762C214.55 464.762 214.55 464.762 214.55 464.762C449.651 669.309 790.926 694.685 1051.02 589.987C1080.08 578.495 1108.89 565.395 1138.44 548.878C1168.92 530.764 1193.23 502.739 1205.01 468.775C1216.8 434.83 1215.24 398.037 1200.44 366.016C1185.65 333.995 1158.65 308.953 1125.16 295.926C1091.66 282.879 1054.56 283.224 1021.01 294.691C1021.01 294.691 1021.01 294.691 1021.01 294.691C1004.19 299.546 984.28 304.24 964.168 307.919C769.79 342.781 578.328 302.094 448.423 188.766C448.423 188.766 448.423 188.766 448.423 188.766C305.296 67.7644 186.605 -93.0789 119.287 -267.797C111.997 -287.032 105.626 -306.919 101.43 -321.778Z"
+                                    fill="#FE6F6F" />
+                            </svg>
+                        </div>
+                        <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-frase-13-16.png"
+                            alt="">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-8">
+
+                    <h2>
+                        Beneficios de consolidar el inglés durante la adolescencia:
+                    </h2>
+
+                    <!-- CARTILLAS -->
+                    <div class="lista_cards">
+                        <div class="row d-none d-md-flex ">
+
+                            <div class="col-md-4">
+                                <article class="sabias_que_card">
+                                    <div class="imagen"><img
+                                            src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-13-16-sabias-item-1.png"
+                                            alt=""></div>
+                                    <div class="caja">
+                                        <p>
+                                            <strong>Se convierte en una herramienta académica: </strong>
+                                            mejor comprensión, mayor pensamiento crítico y autonomía<br><br>
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="col-md-4">
+                                <article class="sabias_que_card">
+                                    <div class="imagen"><img
+                                            src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-13-16-sabias-item-2.png"
+                                            alt=""></div>
+                                    <div class="caja">
+                                        <p>
+                                            <strong>Comunicación clara: seguridad para hablar, </strong>
+                                            debatir y presentar ideas en inglés <br><br>
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="col-md-4">
+                                <article class="sabias_que_card">
+                                    <div class="imagen">
+                                        <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-13-16-sabias-item-3.png"
+                                            alt="">
+                                    </div>
+                                    <div class="caja">
+                                        <p>
+                                            <strong>Mejora notable del desempeño escolar y herramienta clave para
+                                                evaluaciones y certificaciones internacionales</strong>
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- MOBILE: CARRUSEL -->
+                    <div class="d-md-none sabias-que-carousel">
+                        <div id="sabiasQueCarousel" class="carousel slide">
+
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active">
+                                    <div class="sabias-zoom">
+                                        <article class="sabias_que_card">
+                                            <div class="imagen"><img
+                                                    src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-13-16-sabias-item-1.png"
+                                                    alt=""></div>
+                                            <div class="caja">
+                                                <p>
+                                                    <strong>Se convierte en una herramienta académica: </strong>
+                                                    mejor comprensión, mayor pensamiento crítico y autonomía<br><br>
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="sabias-zoom">
+                                        <article class="sabias_que_card">
+                                            <div class="imagen"><img
+                                                    src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-13-16-sabias-item-2.png"
+                                                    alt=""></div>
+                                            <div class="caja">
+                                                <p>
+                                                    <strong>Comunicación clara: seguridad para hablar, </strong>
+                                                    debatir y presentar ideas en inglés <br><br>
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="sabias-zoom">
+
+
+                                        <article class="sabias_que_card">
+                                            <div class="imagen"><img
+                                                    src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-13-16-sabias-item-3.png"
+                                                    alt=""></div>
+                                            <div class="caja">
+                                                <p>
+                                                    <strong>Mejora notable del desempeño escolar y herramienta clave
+                                                        para evaluaciones y certificaciones internacionales</strong>
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- INDICADORES -->
+                            <div class="carousel-indicators sabias-que-indicators">
+                                <button type="button" data-bs-target="#sabiasQueCarousel" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#sabiasQueCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#sabiasQueCarousel" data-bs-slide-to="2"></button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="star">
+            <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kids-sabias-stars.png"
+                alt="">
+        </div>
+        <div class="cara">
+            <img
+                src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kidsteens_sabias_que_cara.png">
+        </div>
+    </section>
+    <!-- END SABIAS QUE -->
+
+
+
+    <div class="container-fluid p-0 m-0">
+        <div class="row g-0 m-0">
+            <div class="col-12 p-0 m-0">
+
+                <picture style="display:block;">
+                    <source srcset="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/GAME.png"
+                        media="(min-width: 768px)">
+                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/GAME%20(1).png"
+                        style="display:block;width:100%;margin:0;padding:0;">
+                </picture>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- TyC -->
+    <div class="container-fluid tyc">
+        <div class="container c-container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="accordion" id="accordionExample1">
+
+                        <div class="accordion-item">
+                            <p class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo">
+                                    Términos y condiciones
+                                </button>
+                            </p>
+                            <div id="collapseTwo1" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    <!-- * Hasta 6 Cuotas Sin Intereses con VISA BBVA y Diners.<br><br>
+                                    Descuento sobre el precio de lista de cada programa. Aplican condiciones y
+                                    restricciones que serán informadas en el proceso de venta. No combinable con otros
+                                    descuentos. Válido hasta el 31/05/2024.
+                                    <br><br>
+                                    Powerpay es un medio de pago que permite pagar tus compras en las cuotas que elijas, con tu tarjeta de crédito a 3,6 y 12 meses. Podrás dividir tus compras en plazos de 3 y 6 cuotas sin intereses y sin comisiones (TEA 0.00% y TCEA 0.00%). Y en 12 cuotas tampoco cobramos intereses, pero sí una comisión Powerpay que varía en función a tu compra: desde S/6.66 hasta S/ 650.28 (TEA 0.00% y TCEA variable). Esta comisión la cobraremos de forma fraccionada en cada una de las cuotas en partes iguales. -->
+
+                                    <ul>
+
+                                        <li>Hasta 6 cuotas sin intereses con BBVA y Dinners*. </li>
+                                        <li>Paga en cuotas sin tarjeta de crédito con Cuotéalo por BCP*.
+                                        </li>
+                                        <li>3-6 cuotas sin intereses con cualquier tarjeta de crédito a través de
+                                            PowerPay. Powerpay es un medio de pago que permite pagar tus compras en las
+                                            cuotas que elijas, con tu tarjeta de crédito a 3,6 y 12 meses. Podrás
+                                            dividir tus compras en plazos de 3 y 6 cuotas sin intereses y sin comisiones
+                                            (TEA 0.00% y TCEA 0.00%). Y en 12 cuotas tampoco cobramos intereses, pero sí
+                                            una comisión Powerpay que varía en función a tu compra: desde S/6.66 hasta
+                                            S/ 650.28 (TEA 0.00% y TCEA variable). Esta comisión la cobraremos de forma
+                                            fraccionada en cada una de las cuotas en partes iguales. Aprobación sujeta a
+                                            previa revisión de capacidad de endeudamiento.</li>
+
+
+                                    </ul>
+                                    <p>*Aplican términos y condiciones que serán comunicados en el proceso de ventas.
+                                    </p>
+                                    <p>Válido hasta el: <span id="fecha-limite">--/--/----</span></p>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END TyC -->
+
+
+    <!--footer -->
+    <div class="container-fluid footer2">
+        <div class="container text-center">
+            <p>Independently owned and operated</p>
+        </div>
+    </div>
+
+    <div class="container-fluid footer">
+        <div class="container text-center">
+            <p>© <span id="anio-actual">2026</span> Berlitz Corporation</p>
+        </div>
+    </div>
+    <!--end footer -->
+
+
+
+
+
+    <!-- wsp -->
+
+    <div class="c-wsp3 active" id="btn_form_whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </div>
+
+    <!-- wsp fin-->
+
+
+    <!-- FORM WS -->
+
+    <div class="c-form-whatsapp c-hs-form" id="form_whatsapp">
+        <div class="close">
+            <span id="btn_form_whatsapp_close">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </span>
+        </div>
+        <h3 class="mb-3">Antes de empezar, <br>por favor déjanos tus datos:</h3>
+
+        <div id="hs_form_target_widget_16147083592778" data-hs-forms-root="true">
+            <form id="hsForm_48b929b1-8084-4036-add7-31636047d229_8899" method="POST" accept-charset="UTF-8"
+                enctype="multipart/form-data" novalidate=""
+                action="https://forms.hsforms.com/submissions/v3/public/submit/formsnext/multipart/9068661/48b929b1-8084-4036-add7-31636047d229"
+                class="hs-form-private hsForm_48b929b1-8084-4036-add7-31636047d229 hs-form-48b929b1-8084-4036-add7-31636047d229 hs-form-48b929b1-8084-4036-add7-31636047d229_b21b1efe-36a4-45ef-98d3-6897a0f98211 hs-form stacked hs-custom-form"
+                target="target_iframe_48b929b1-8084-4036-add7-31636047d229_8899"
+                data-instance-id="b21b1efe-36a4-45ef-98d3-6897a0f98211"
+                data-form-id="48b929b1-8084-4036-add7-31636047d229" data-portal-id="9068661"
+                data-test-id="hsForm_48b929b1-8084-4036-add7-31636047d229_8899" data-hs-cf-bound="true">
+                <div class="hs_firstname hs-firstname hs-fieldtype-text field hs-form-field"><label
+                        id="label-firstname-48b929b1-8084-4036-add7-31636047d229_8899" class=""
+                        for="firstname-48b929b1-8084-4036-add7-31636047d229_8899"><span>Nombre</span><span
+                            class="hs-form-required">*</span></label>
+                    <div class="input"><input id="firstname-48b929b1-8084-4036-add7-31636047d229_8899" name="firstname"
+                            required="" placeholder="Nombres completos" type="text" class="hs-input" inputmode="text"
+                            autocomplete="given-name" value=""></div>
+                </div>
+                <div class="hs_email hs-email hs-fieldtype-text field hs-form-field"><label
+                        id="label-email-48b929b1-8084-4036-add7-31636047d229_8899" class=""
+                        for="email-48b929b1-8084-4036-add7-31636047d229_8899"><span>Email</span><span
+                            class="hs-form-required">*</span></label>
+                    <div class="input"><input id="email-48b929b1-8084-4036-add7-31636047d229_8899" name="email"
+                            required="" placeholder="Email" type="email" class="hs-input" inputmode="email"
+                            autocomplete="email" value=""></div>
+                </div>
+                <div class="hs_phone hs-phone hs-fieldtype-phonenumber field hs-form-field"><label
+                        id="label-phone-48b929b1-8084-4036-add7-31636047d229_8899" class=""
+                        for="phone-48b929b1-8084-4036-add7-31636047d229_8899"><span>Número de teléfono</span><span
+                            class="hs-form-required">*</span></label>
+                    <div class="input">
+                        <div class="hs-input hs-fieldtype-intl-phone"><select
+                                id="phone_ext-48b929b1-8084-4036-add7-31636047d229_8899" required="" class="hs-input"
+                                name="">
+                                <option disabled="" value="">*</option>
+                                <option value="AF">Afghanistan (&#x202B;افغانستان&#x202C;&lrm;)</option>
+                                <option value="AL">Albania (Shqipëri)</option>
+                                <option value="DZ">Algeria (&#x202B;الجزائر&#x202C;&lrm;)</option>
+                                <option value="AS">American Samoa</option>
+                                <option value="AD">Andorra</option>
+                                <option value="AO">Angola</option>
+                                <option value="AI">Anguilla</option>
+                                <option value="AG">Antigua and Barbuda</option>
+                                <option value="AR">Argentina</option>
+                                <option value="AM">Armenia (Հայաստան)</option>
+                                <option value="AW">Aruba</option>
+                                <option value="AU">Australia</option>
+                                <option value="AT">Austria (Österreich)</option>
+                                <option value="AZ">Azerbaijan (Azərbaycan)</option>
+                                <option value="BS">Bahamas</option>
+                                <option value="BH">Bahrain (&#x202B;البحرين&#x202C;&lrm;)</option>
+                                <option value="BD">Bangladesh (বাংলাদেশ)</option>
+                                <option value="BB">Barbados</option>
+                                <option value="BY">Belarus (Беларусь)</option>
+                                <option value="BE">Belgium (België)</option>
+                                <option value="BZ">Belize</option>
+                                <option value="BJ">Benin (Bénin)</option>
+                                <option value="BM">Bermuda</option>
+                                <option value="BT">Bhutan (འབྲུག)</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="BA">Bosnia and Herzegovina (Босна и Херцеговина)</option>
+                                <option value="BW">Botswana</option>
+                                <option value="BR">Brazil (Brasil)</option>
+                                <option value="IO">British Indian Ocean Territory</option>
+                                <option value="VG">British Virgin Islands</option>
+                                <option value="BN">Brunei</option>
+                                <option value="BG">Bulgaria (България)</option>
+                                <option value="BF">Burkina Faso</option>
+                                <option value="BI">Burundi (Uburundi)</option>
+                                <option value="KH">Cambodia (កម្ពុជា)</option>
+                                <option value="CM">Cameroon (Cameroun)</option>
+                                <option value="CA">Canada</option>
+                                <option value="CV">Cape Verde (Kabu Verdi)</option>
+                                <option value="BQ">Caribbean Netherlands</option>
+                                <option value="KY">Cayman Islands</option>
+                                <option value="CF">Central African Republic (République centrafricaine)</option>
+                                <option value="TD">Chad (Tchad)</option>
+                                <option value="CL">Chile</option>
+                                <option value="CN">China (中国)</option>
+                                <option value="CO">Colombia</option>
+                                <option value="KM">Comoros (&#x202B;جزر القمر&#x202C;&lrm;)</option>
+                                <option value="CD">Congo (DRC) (Jamhuri ya Kidemokrasia ya Kongo)</option>
+                                <option value="CG">Congo (Republic) (Congo-Brazzaville)</option>
+                                <option value="CK">Cook Islands</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="CI">Côte d’Ivoire</option>
+                                <option value="HR">Croatia (Hrvatska)</option>
+                                <option value="CU">Cuba</option>
+                                <option value="CW">Curaçao</option>
+                                <option value="CY">Cyprus (Κύπρος)</option>
+                                <option value="CZ">Czech Republic (Česká republika)</option>
+                                <option value="DK">Denmark (Danmark)</option>
+                                <option value="DJ">Djibouti</option>
+                                <option value="DM">Dominica</option>
+                                <option value="DO">Dominican Republic (República Dominicana)</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="EG">Egypt (&#x202B;مصر&#x202C;&lrm;)</option>
+                                <option value="SV">El Salvador</option>
+                                <option value="GQ">Equatorial Guinea (Guinea Ecuatorial)</option>
+                                <option value="ER">Eritrea</option>
+                                <option value="EE">Estonia (Eesti)</option>
+                                <option value="ET">Ethiopia</option>
+                                <option value="FK">Falkland Islands (Islas Malvinas)</option>
+                                <option value="FO">Faroe Islands (Føroyar)</option>
+                                <option value="FJ">Fiji</option>
+                                <option value="FI">Finland (Suomi)</option>
+                                <option value="FR">France</option>
+                                <option value="GF">French Guiana (Guyane française)</option>
+                                <option value="PF">French Polynesia (Polynésie française)</option>
+                                <option value="GA">Gabon</option>
+                                <option value="GM">Gambia</option>
+                                <option value="GE">Georgia (საქართველო)</option>
+                                <option value="DE">Germany (Deutschland)</option>
+                                <option value="GH">Ghana (Gaana)</option>
+                                <option value="GI">Gibraltar</option>
+                                <option value="GR">Greece (Ελλάδα)</option>
+                                <option value="GL">Greenland (Kalaallit Nunaat)</option>
+                                <option value="GD">Grenada</option>
+                                <option value="GP">Guadeloupe</option>
+                                <option value="GU">Guam</option>
+                                <option value="GT">Guatemala</option>
+                                <option value="GN">Guinea (Guinée)</option>
+                                <option value="GW">Guinea-Bissau (Guiné Bissau)</option>
+                                <option value="GY">Guyana</option>
+                                <option value="HT">Haiti</option>
+                                <option value="HN">Honduras</option>
+                                <option value="HK">Hong Kong (香港)</option>
+                                <option value="HU">Hungary (Magyarország)</option>
+                                <option value="IS">Iceland (Ísland)</option>
+                                <option value="IN">India (भारत)</option>
+                                <option value="ID">Indonesia</option>
+                                <option value="IR">Iran (&#x202B;ایران&#x202C;&lrm;)</option>
+                                <option value="IQ">Iraq (&#x202B;العراق&#x202C;&lrm;)</option>
+                                <option value="IE">Ireland</option>
+                                <option value="IL">Israel (&#x202B;ישראל&#x202C;&lrm;)</option>
+                                <option value="IT">Italy (Italia)</option>
+                                <option value="JM">Jamaica</option>
+                                <option value="JP">Japan (日本)</option>
+                                <option value="JO">Jordan (&#x202B;الأردن&#x202C;&lrm;)</option>
+                                <option value="KZ">Kazakhstan (Казахстан)</option>
+                                <option value="KE">Kenya</option>
+                                <option value="KI">Kiribati</option>
+                                <option value="XK">Kosovo</option>
+                                <option value="KW">Kuwait (&#x202B;الكويت&#x202C;&lrm;)</option>
+                                <option value="KG">Kyrgyzstan (Кыргызстан)</option>
+                                <option value="LA">Laos (ລາວ)</option>
+                                <option value="LV">Latvia (Latvija)</option>
+                                <option value="LB">Lebanon (&#x202B;لبنان&#x202C;&lrm;)</option>
+                                <option value="LS">Lesotho</option>
+                                <option value="LR">Liberia</option>
+                                <option value="LY">Libya (&#x202B;ليبيا&#x202C;&lrm;)</option>
+                                <option value="LI">Liechtenstein</option>
+                                <option value="LT">Lithuania (Lietuva)</option>
+                                <option value="LU">Luxembourg</option>
+                                <option value="MO">Macau (澳門)</option>
+                                <option value="MK">Macedonia (FYROM) (Македонија)</option>
+                                <option value="MG">Madagascar (Madagasikara)</option>
+                                <option value="MW">Malawi</option>
+                                <option value="MY">Malaysia</option>
+                                <option value="MV">Maldives</option>
+                                <option value="ML">Mali</option>
+                                <option value="MT">Malta</option>
+                                <option value="MH">Marshall Islands</option>
+                                <option value="MQ">Martinique</option>
+                                <option value="MR">Mauritania (&#x202B;موريتانيا&#x202C;&lrm;)</option>
+                                <option value="MU">Mauritius (Moris)</option>
+                                <option value="MX">Mexico (México)</option>
+                                <option value="FM">Micronesia</option>
+                                <option value="MD">Moldova (Republica Moldova)</option>
+                                <option value="MC">Monaco</option>
+                                <option value="MN">Mongolia (Монгол)</option>
+                                <option value="ME">Montenegro (Crna Gora)</option>
+                                <option value="MS">Montserrat</option>
+                                <option value="MA">Morocco (&#x202B;المغرب&#x202C;&lrm;)</option>
+                                <option value="MZ">Mozambique (Moçambique)</option>
+                                <option value="MM">Myanmar (Burma) (မြန်မာ)</option>
+                                <option value="NA">Namibia (Namibië)</option>
+                                <option value="NR">Nauru</option>
+                                <option value="NP">Nepal (नेपाल)</option>
+                                <option value="NL">Netherlands (Nederland)</option>
+                                <option value="NC">New Caledonia (Nouvelle-Calédonie)</option>
+                                <option value="NZ">New Zealand</option>
+                                <option value="NI">Nicaragua</option>
+                                <option value="NE">Niger (Nijar)</option>
+                                <option value="NG">Nigeria</option>
+                                <option value="NU">Niue</option>
+                                <option value="NF">Norfolk Island</option>
+                                <option value="KP">North Korea (조선 민주주의 인민 공화국)</option>
+                                <option value="MP">Northern Mariana Islands</option>
+                                <option value="NO">Norway (Norge)</option>
+                                <option value="OM">Oman (&#x202B;عُمان&#x202C;&lrm;)</option>
+                                <option value="PK">Pakistan (&#x202B;پاکستان&#x202C;&lrm;)</option>
+                                <option value="PW">Palau</option>
+                                <option value="PS">Palestine (&#x202B;فلسطين&#x202C;&lrm;)</option>
+                                <option value="PA">Panama (Panamá)</option>
+                                <option value="PG">Papua New Guinea</option>
+                                <option value="PY">Paraguay</option>
+                                <option value="PE">Peru (Perú)</option>
+                                <option value="PH">Philippines</option>
+                                <option value="PL">Poland (Polska)</option>
+                                <option value="PT">Portugal</option>
+                                <option value="PR">Puerto Rico</option>
+                                <option value="QA">Qatar (&#x202B;قطر&#x202C;&lrm;)</option>
+                                <option value="RE">Réunion (La Réunion)</option>
+                                <option value="RO">Romania (România)</option>
+                                <option value="RU">Russia (Россия)</option>
+                                <option value="RW">Rwanda</option>
+                                <option value="BL">Saint Barthélemy (Saint-Barthélemy)</option>
+                                <option value="SH">Saint Helena</option>
+                                <option value="KN">Saint Kitts and Nevis</option>
+                                <option value="LC">Saint Lucia</option>
+                                <option value="MF">Saint Martin (Saint-Martin (partie française))</option>
+                                <option value="PM">Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)</option>
+                                <option value="VC">Saint Vincent and the Grenadines</option>
+                                <option value="WS">Samoa</option>
+                                <option value="SM">San Marino</option>
+                                <option value="ST">São Tomé and Príncipe (São Tomé e Príncipe)</option>
+                                <option value="SA">Saudi Arabia (&#x202B;المملكة العربية السعودية&#x202C;&lrm;)</option>
+                                <option value="SN">Senegal (Sénégal)</option>
+                                <option value="RS">Serbia (Србија)</option>
+                                <option value="SC">Seychelles</option>
+                                <option value="SL">Sierra Leone</option>
+                                <option value="SG">Singapore</option>
+                                <option value="SX">Sint Maarten</option>
+                                <option value="SK">Slovakia (Slovensko)</option>
+                                <option value="SI">Slovenia (Slovenija)</option>
+                                <option value="SB">Solomon Islands</option>
+                                <option value="SO">Somalia (Soomaaliya)</option>
+                                <option value="ZA">South Africa</option>
+                                <option value="KR">South Korea (대한민국)</option>
+                                <option value="SS">South Sudan (&#x202B;جنوب السودان&#x202C;&lrm;)</option>
+                                <option value="ES">Spain (España)</option>
+                                <option value="LK">Sri Lanka (ශ්&zwj;රී ලංකාව)</option>
+                                <option value="SD">Sudan (&#x202B;السودان&#x202C;&lrm;)</option>
+                                <option value="SR">Suriname</option>
+                                <option value="SZ">Swaziland</option>
+                                <option value="SE">Sweden (Sverige)</option>
+                                <option value="CH">Switzerland (Schweiz)</option>
+                                <option value="SY">Syria (&#x202B;سوريا&#x202C;&lrm;)</option>
+                                <option value="TW">Taiwan (台灣)</option>
+                                <option value="TJ">Tajikistan</option>
+                                <option value="TZ">Tanzania</option>
+                                <option value="TH">Thailand (ไทย)</option>
+                                <option value="TL">Timor-Leste</option>
+                                <option value="TG">Togo</option>
+                                <option value="TK">Tokelau</option>
+                                <option value="TO">Tonga</option>
+                                <option value="TT">Trinidad and Tobago</option>
+                                <option value="TN">Tunisia (&#x202B;تونس&#x202C;&lrm;)</option>
+                                <option value="TR">Turkey (Türkiye)</option>
+                                <option value="TM">Turkmenistan</option>
+                                <option value="TC">Turks and Caicos Islands</option>
+                                <option value="TV">Tuvalu</option>
+                                <option value="VI">U.S. Virgin Islands</option>
+                                <option value="UG">Uganda</option>
+                                <option value="UA">Ukraine (Україна)</option>
+                                <option value="AE">United Arab Emirates (&#x202B;الإمارات العربية المتحدة&#x202C;&lrm;)
+                                </option>
+                                <option value="GB">United Kingdom</option>
+                                <option value="US">United States</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="UZ">Uzbekistan (Oʻzbekiston)</option>
+                                <option value="VU">Vanuatu</option>
+                                <option value="VA">Vatican City (Città del Vaticano)</option>
+                                <option value="VE">Venezuela</option>
+                                <option value="VN">Vietnam (Việt Nam)</option>
+                                <option value="WF">Wallis and Futuna</option>
+                                <option value="YE">Yemen (&#x202B;اليمن&#x202C;&lrm;)</option>
+                                <option value="ZM">Zambia</option>
+                                <option value="ZW">Zimbabwe</option>
+                            </select><input id="phone-48b929b1-8084-4036-add7-31636047d229_8899" name="" required=""
+                                placeholder="" type="tel" class="hs-input" inputmode="tel" autocomplete="tel"
+                                value="+51 "><input name="phone" class="hs-input" type="hidden" value=""></div>
+                    </div>
+                </div>
+                <div class="hs_country hs-country hs-fieldtype-text field hs-form-field" style="display: none;"><label
+                        id="label-country-48b929b1-8084-4036-add7-31636047d229_8899" class=""
+                        for="country-48b929b1-8084-4036-add7-31636047d229_8899"><span>País/región</span></label>
+                    <div class="input"><input id="country-48b929b1-8084-4036-add7-31636047d229_8899" name="country"
+                            class="hs-input" type="hidden" value=""></div>
+                </div>
+                <div class="hs_berlitz___campana hs-berlitz___campana hs-fieldtype-checkbox field hs-form-field"
+                    style="display: none;"><label id="label-berlitz___campana-48b929b1-8084-4036-add7-31636047d229_8899"
+                        class="" for="berlitz___campana-48b929b1-8084-4036-add7-31636047d229_8899"><span>Berlitz -
+                            Campaña - Fuente</span></label>
+                    <div class="input"><input id="berlitz___campana-48b929b1-8084-4036-add7-31636047d229_8899"
+                            name="berlitz___campana" class="hs-input" type="hidden" value="[OntheGo - Graduate]"></div>
+                </div>
+                <div class="hs_pe_tyc_1 hs-pe_tyc_1 hs-fieldtype-booleancheckbox field hs-form-field">
+                    <div class="input">
+                        <ul class="inputs-list">
+                            <li class="hs-form-booleancheckbox"><label
+                                    for="pe_tyc_1-48b929b1-8084-4036-add7-31636047d229_8899"
+                                    class="hs-form-booleancheckbox-display"><input
+                                        id="pe_tyc_1-48b929b1-8084-4036-add7-31636047d229_8899" class="hs-input"
+                                        type="checkbox" name="pe_tyc_1" value="true"><span>Acepto las <a
+                                            href="https://www.berlitz.com/es-pe/politica-privacidad" target="_blank"
+                                            rel="noopener">políticas de privacidad</a>.<span
+                                            class="hs-form-required">*</span></span></label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hs_submit hs-submit">
+                    <div class="hs-field-desc" style="display: none;"></div>
+                    <div class="actions"><input type="submit" class="hs-button primary large" value="Iniciar Chat">
+                    </div>
+                </div><input name="hs_context" type="hidden"
+                    value="{&quot;embedAtTimestamp&quot;:&quot;1765548498061&quot;,&quot;formDefinitionUpdatedAt&quot;:&quot;1765548497422&quot;,&quot;lang&quot;:&quot;esMX&quot;,&quot;embedType&quot;:&quot;REGULAR&quot;,&quot;disableCookieSubmission&quot;:&quot;true&quot;,&quot;clonedFromForm&quot;:&quot;d29842e5-9d4f-4296-96fc-a5fbbc184779&quot;,&quot;definitionS3WriteDate&quot;:&quot;1765548498061&quot;,&quot;userAgent&quot;:&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36&quot;,&quot;pageTitle&quot;:&quot;Inglés B1 Online para Jóvenes Universitarios | Berlitz OTGG&quot;,&quot;pageUrl&quot;:&quot;https://onthegograduate.com.pe/&quot;,&quot;isHubSpotCmsGeneratedPage&quot;:false,&quot;hutk&quot;:&quot;e188d73770b583dc597d140e1dc12e07&quot;,&quot;__hsfp&quot;:1804082026,&quot;__hssc&quot;:&quot;242922589.1.1767075697174&quot;,&quot;__hstc&quot;:&quot;242922589.e188d73770b583dc597d140e1dc12e07.1764614545844.1767073125060.1767075697174.11&quot;,&quot;formTarget&quot;:&quot;#hs_form_target_widget_16147083592778&quot;,&quot;formInstanceId&quot;:&quot;8899&quot;,&quot;contentType&quot;:&quot;landing-page&quot;,&quot;pageName&quot;:&quot;Berlitz Perú - OnTheGo&quot;,&quot;pageId&quot;:&quot;113138659853&quot;,&quot;rumScriptExecuteTime&quot;:310.2999999523163,&quot;rumTotalRequestTime&quot;:434,&quot;rumTotalRenderTime&quot;:444.10000002384186,&quot;rumServiceResponseTime&quot;:123.80000007152557,&quot;rumFormRenderTime&quot;:10.100000023841858,&quot;connectionType&quot;:&quot;4g&quot;,&quot;firstContentfulPaint&quot;:0,&quot;largestContentfulPaint&quot;:0,&quot;locale&quot;:&quot;es-mx&quot;,&quot;timestamp&quot;:1767075697210,&quot;originalEmbedContext&quot;:{&quot;portalId&quot;:&quot;9068661&quot;,&quot;formId&quot;:&quot;48b929b1-8084-4036-add7-31636047d229&quot;,&quot;region&quot;:&quot;na1&quot;,&quot;target&quot;:&quot;#hs_form_target_widget_16147083592778&quot;,&quot;isBuilder&quot;:false,&quot;isTestPage&quot;:false,&quot;isPreview&quot;:false,&quot;formInstanceId&quot;:&quot;8899&quot;,&quot;formsBaseUrl&quot;:&quot;/_hcms/forms&quot;,&quot;css&quot;:&quot;&quot;,&quot;isMobileResponsive&quot;:true,&quot;pageName&quot;:&quot;Berlitz Perú - OnTheGo&quot;,&quot;pageId&quot;:&quot;113138659853&quot;,&quot;contentType&quot;:&quot;landing-page&quot;,&quot;formData&quot;:{&quot;cssClass&quot;:&quot;hs-form stacked hs-custom-form&quot;},&quot;isCMSModuleEmbed&quot;:true},&quot;correlationId&quot;:&quot;b21b1efe-36a4-45ef-98d3-6897a0f98211&quot;,&quot;renderedFieldsIds&quot;:[&quot;firstname&quot;,&quot;email&quot;,&quot;phone&quot;,&quot;country&quot;,&quot;berlitz___campana&quot;,&quot;pe_tyc_1&quot;],&quot;captchaStatus&quot;:&quot;NOT_APPLICABLE&quot;,&quot;emailResubscribeStatus&quot;:&quot;NOT_APPLICABLE&quot;,&quot;isInsideCrossOriginFrame&quot;:false,&quot;source&quot;:&quot;forms-embed-1.10266&quot;,&quot;sourceName&quot;:&quot;forms-embed&quot;,&quot;sourceVersion&quot;:&quot;1.10266&quot;,&quot;sourceVersionMajor&quot;:&quot;1&quot;,&quot;sourceVersionMinor&quot;:&quot;10266&quot;,&quot;allPageIds&quot;:{&quot;embedContextPageId&quot;:&quot;113138659853&quot;},&quot;_debug_embedLogLines&quot;:[{&quot;clientTimestamp&quot;:1767075695630,&quot;level&quot;:&quot;INFO&quot;,&quot;message&quot;:&quot;Retrieved customer callbacks used on embed context: [\&quot;onFormReady\&quot;,\&quot;onFormSubmit\&quot;,\&quot;onFormSubmitted\&quot;]&quot;},{&quot;clientTimestamp&quot;:1767075695630,&quot;level&quot;:&quot;INFO&quot;,&quot;message&quot;:&quot;Retrieved pageContext values which may be overriden by the embed context: {\&quot;pageTitle\&quot;:\&quot;Inglés B1 Online para Jóvenes Universitarios | Berlitz OTGG\&quot;,\&quot;pageUrl\&quot;:\&quot;https://onthegograduate.com.pe/\&quot;,\&quot;userAgent\&quot;:\&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\&quot;,\&quot;isHubSpotCmsGeneratedPage\&quot;:false}&quot;},{&quot;clientTimestamp&quot;:1767075695634,&quot;level&quot;:&quot;INFO&quot;,&quot;message&quot;:&quot;Retrieved countryCode property from normalized embed definition response: \&quot;US\&quot;&quot;},{&quot;clientTimestamp&quot;:1767075697194,&quot;level&quot;:&quot;INFO&quot;,&quot;message&quot;:&quot;Retrieved analytics values from API response which may be overriden by the embed context: {\&quot;hutk\&quot;:\&quot;e188d73770b583dc597d140e1dc12e07\&quot;}&quot;}]}"><iframe
+                    name="target_iframe_48b929b1-8084-4036-add7-31636047d229_8899" data-gtm-yt-inspected-10="true"
+                    data-gtm-yt-inspected-15="true" style="display: none;"></iframe>
+            </form>
+        </div>
+
+
+
+        <script data-hubspot-rendered="true">
+            var options = {
+                portalId: "9068661",
+                formId: "4d74cfd0-5c3c-42c8-b8c7-56e68b284d90",
+                formInstanceId: "8899",
+                pageId: "113138659853",
+                region: "na1",
+                pageName: "Berlitz Perú - Kids & Teens",
+                css: "",
+                target: "#hs_form_target_widget_16147083592778",
+                contentType: "landing-page",
+                formsBaseUrl: "/_hcms/forms/",
+                formData: {
+                    cssClass: "hs-form stacked hs-custom-form",
+                },
+                onFormReady: function ($form) {
+                    $(".hs-fieldtype-intl-phone select").val("PE");
+                    $(".hs-fieldtype-intl-phone select").trigger("change");
+                },
+                onFormSubmit: function ($form) {
+                    console.log(
+                        "✅ ¡Gracias por registrarte! Tu información se está enviando..."
+                    );
+                    const btnClose = document.getElementById("btn_form_whatsapp_close");
+                    if (btnClose) {
+                        btnClose.click();
+                    } else {
+                        console.warn(
+                            "⚠️ No se encontró el botón #btn_form_whatsapp_close"
+                        );
+                    }
+
+                    // --- 1️⃣ Evento a Meta Pixel ---
+                    if (typeof fbq !== "undefined") {
+                        fbq("track", "Lead", {
+                            content_name: "Formulario Kids & Teens - Whatsapp",
+                            status: "submitted",
+                        });
+                        console.log("📊 Evento 'Lead' enviado a Meta Pixel");
+                    } else {
+                        console.warn("⚠️ Meta Pixel no está disponible");
+                    }
+
+
+
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                        event: "form_submit_wsp",
+                        categoria: "formulario_wsp",
+                        accion: "enviar",
+                        etiqueta: "contacto",
+                    });
+                },
+                onFormSubmitted: function ($form) {
+                    setTimeout(function () {
+                        window.open(
+                            "https://api.whatsapp.com/send?phone=51933768683&text=%C2%A1Hola%21%20%F0%9F%91%8B%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20curso%20de%20ingl%C3%A9s%20para%20adolescentes%20de%2013%20a%2016%20a%C3%B1os.%20%C2%A1Gracias%21",
+                            "_blank"
+                        );
+                    }, 300);
+                    return false;
+                },
+            };
+
+            hbspt.forms.create(options);
+        </script>
+
+
+    </div>
+
+    <!-- FORM WS FIN  -->
+
+
+
+    <!-- wsp -->
+    <div id="btn_nosotros" class="c-wsp2 btn_contacto d-none">
+        <i class="fa-regular fa-message-captions"></i>
+    </div>
+
+    <!-- <a href="https://api.whatsapp.com/send?phone=51936636289&text=Estoy%20interesado%20en%20el%20proyecto%20de%20Brasil"
+        target="_blank" class="c-wsp pulse">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a> -->
+
+
+
+
+
+
+
+
+    <a href="javascript:click_section('t_header')" class="c-subir active"><i class="fa fa-angle-up"></i></a>
+
+
+    <!-- <div class="c-wsp pulse" data-bs-toggle="modal" data-bs-target="#mdl_wsp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </div> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+
+    <script src="assets/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+
+    <!-- Slick-->
+    <!-- <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script> -->
+    <script src="assets/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <script src="assets/js/propper.min.js"></script>
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+    <!--to view items on reach-->
+    <script src="assets/js/jquery.appear.min.js">
+    </script>
+    <!--Owl Slider-->
+    <script src="assets/js/owl.carousel.min.js">
+    </script>
+    <!--number counters-->
+    <!-- <script src="assets/js/jquery-countTo.min.js"></script> -->
+    <!--Parallax Background-->
+    <script src="assets/js/parallaxie.min.js">
+    </script>
+    <!--Cubefolio Gallery-->
+    <script src="assets/js/jquery.cubeportfolio.min.js">
+    </script>
+    <!--Fancybox js-->
+    <script src="assets/js/jquery.fancybox.min.js">
+    </script>
+    <!--tooltip js-->
+    <script src="assets/js/tooltipster.min.js">
+    </script>
+    <!--wow js-->
+    <!-- <script src="assets/js/wow.min.js"></script> -->
+
+    <!--Revolution SLider-->
+    <script src="assets/js/revolution/jquery.themepunch.tools.min.js">
+    </script>
+    <script src="assets/js/revolution/jquery.themepunch.revolution.min.js">
+    </script>
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS -->
+    <script src="assets/js/revolution/extensions/revolution.extension.actions.min.js">
+    </script>
+    <script src="assets/js/revolution/extensions/revolution.extension.carousel.min.js">
+    </script>
+    <script src="assets/js/revolution/extensions/revolution.extension.kenburn.min.js">
+    </script>
+    <script src="assets/js/revolution/extensions/revolution.extension.layeranimation.min.js">
+    </script>
+    <!-- <script src="js/revolution/extensions/revolution.extension.migration.min.js"></script> -->
+    <script src="assets/js/revolution/extensions/revolution.extension.navigation.min.js">
+    </script>
+    <script src="assets/js/revolution/extensions/revolution.extension.parallax.min.js">
+    </script>
+    <script src="assets/js/revolution/extensions/revolution.extension.slideanims.min.js">
+    </script>
+    <!-- <script src="js/revolution/extensions/revolution.extension.video.min.js"></script> -->
+    <!--custom functions and script-->
+    <script src="assets/js/functions.js"></script>
+    <script src="assets/js/cmln.js?v=202601"></script>
+
+    <script src="assets/js/carrousel.js"></script>
+
+
+
+    <script>
+        //<![CDATA[
+        // YouTube iFrames
+        var i, c, y, v, s, n;
+        v = document.getElementsByClassName("youtube");
+        if (v.length > 0) {
+            s = document.createElement("style");
+            s.type = "text/css";
+            s.innerHTML =
+                '.youtube{background-color:#000;max-width:100%;overflow:hidden;position:relative;cursor:hand;cursor:pointer}.youtube .ythumb{bottom:0;display:block;left:0;margin:auto;padding:0;max-width:100%;position:absolute;right:0;top:0;width:100%;height:auto}.youtube .play{filter:alpha(opacity=80);opacity:.8;left:50%;margin-left:-38px;margin-top:-38px;position:absolute;top:50%;width:77px;height:77px;background:url(//lh6.googleusercontent.com/-KM0uGaLlhKc/UznnNWfT-wI/AAAAAAAAKS0/Nnz3WwdoLxk/s77/play.png) no-repeat}';
+            document.body.appendChild(s)
+        }
+        for (n = 0; n < v.length; n++) {
+            y = v[n];
+            i = document.createElement("img");
+            i.setAttribute("src", "http://i.ytimg.com/vi/" + y.id + "/hqdefault.jpg");
+            i.setAttribute("class", "ythumb");
+            c = document.createElement("div");
+            c.setAttribute("class", "play");
+            y.appendChild(i);
+            y.appendChild(c);
+            y.onclick = function () {
+                var a = document.createElement("iframe");
+                a.setAttribute("src", "https://www.youtube.com/embed/" + this.id +
+                    "?autoplay=1&autohide=1&border=0&wmode=opaque&enablejsapi=1");
+                a.style.width = this.style.width;
+                a.style.height = this.style.height;
+                a.style.margin = this.style.margin;
+                a.style.border = this.style.border;
+                a.style.display = this.style.display;
+                this.parentNode.replaceChild(a, this)
+            }
+        };
+        //]]>
+    </script>
+
+
+
+
+
+
+
+
+    <script src="assets/js/cmln_2.js"></script>
+
+
+    <!--  <script src="assets/js/luxon.min.js"></script>
+    <script>
+        const fechaEvento = luxon.DateTime.fromISO('2025-03-21T23:59:59', {
+            zone: 'America/Lima'
+        });
+
+        function actualizarContador() {
+            // Obtener la zona horaria local del navegador del usuario
+            const zonaHorariaLocal = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+            // Obtener la fecha y hora actual en la zona horaria local del navegador del usuario
+            const ahora = luxon.DateTime.local().setZone(zonaHorariaLocal);
+
+            const diferencia = fechaEvento.diff(ahora);
+
+            if (diferencia.as('milliseconds') > 0) {
+                const {
+                    days,
+                    hours,
+                    minutes,
+                    seconds
+                } = diferencia.shiftTo('days', 'hours', 'minutes', 'seconds').toObject();
+
+                document.getElementById('dias').innerHTML = `${String(days).padStart(2, '0')}`;
+                document.getElementById('horas').innerHTML = `${String(hours).padStart(2, '0')}`;
+                document.getElementById('minutos').innerHTML = `${String(minutes).padStart(2, '0')}`;
+                document.getElementById('segundos').innerHTML = `${String(Math.floor(seconds)).padStart(2, '0')}`;
+            } else {
+                document.getElementById('dias').innerHTML = '00';
+                document.getElementById('horas').innerHTML = '00';
+                document.getElementById('minutos').innerHTML = '00';
+                document.getElementById('segundos').innerHTML = '00';
+            }
+        }
+
+        setInterval(actualizarContador, 1000);
+    </script>-->
+
+    <script>
+        //FECHAS VIGENCIA EN TYC y AÑO
+        (function () {
+            const ahora = new Date();
+
+            // 1. Automatizar Año para Copyright
+            const elAnio = document.getElementById('anio-actual');
+            if (elAnio) elAnio.textContent = ahora.getFullYear();
+
+            // 2. Automatizar Fecha Límite (Fin de mes)
+            const elLimite = document.getElementById('fecha-limite');
+            if (elLimite) {
+                const ultimoDia = new Date(ahora.getFullYear(), ahora.getMonth() + 1, 0);
+                const dia = String(ultimoDia.getDate()).padStart(2, '0');
+                const mes = String(ultimoDia.getMonth() + 1).padStart(2, '0');
+                const anioFormateado = ultimoDia.getFullYear();
+                elLimite.textContent = `${dia}/${mes}/${anioFormateado}`;
+            }
+        })();
+    </script>
+
+
+</body>
+
+</html>

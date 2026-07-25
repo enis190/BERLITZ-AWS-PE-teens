@@ -1,0 +1,125 @@
+.hs-button{
+    border:2px solid #FFF;
+  }
+
+    /* STYLES - TELEFONO ARG */
+  .hs_form___telefono___prefijo1{
+        position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+  }
+  .hs_form___telefono___prefijo1 .hs-input{
+    padding:0px;
+  }
+  .legal-consent-container{
+    z-index: 9999;
+    position: sticky;
+  }
+  .hs_form___telefono___prefijo2 {
+        opacity: 0;
+    position: absolute;
+  }
+    .hs_form___tipo_telefono .input ul{
+        display: flex;
+    }
+  
+  .hs_form___telefono___prefijo3{
+      width: 30% !important;
+      //display: inline-grid;
+    }
+  .hs_form___telefono___prefijo4{
+      width: 36% !important;
+      //display: inline-grid;
+    }
+  
+  .hs_form___telefono___prefijo3  label, .hs_form___telefono___prefijo4 label{
+    opacity:0;
+  }
+  
+  @media (min-device-width: 320px) and (max-device-width: 767px) {
+    #hs_form_target_widget_1616625895479 .form-columns-3 .hs_form___telefono___prefijo3{
+      width: 40% !important;
+    }
+    #hs_form_target_widget_1616625895479 .form-columns-3 .hs_form___telefono___prefijo4{
+      width: 40% !important;
+    }
+  } 
+
+  .form-columns-3{
+    max-width: inherit !important;
+  }
+
+  .hs_acepta_politica_privacidad_ar {
+    z-index: 9;
+    position: sticky;
+  }
+
+  form{
+    .inputs-list{
+        padding: 0;
+        list-style: none;
+        li{
+            margin-right: 8px;
+            label{
+                span{
+                    margin-left: 5px;
+                }
+                display: inline-flex !important;
+            }
+        }
+    }
+    #form___telefono___prefijo1-03045fad-1c5f-474c-995e-a2331d2be31c_9670,
+    #form___telefono___prefijo1-03045fad-1c5f-474c-995e-a2331d2be31c_8899, 
+    #form___telefono___prefijo1-b3648151-9977-4e93-8e7f-632275dd21a9_8899,
+    #form___telefono___prefijo1-b3648151-9977-4e93-8e7f-632275dd21a9_5325,
+    #form___telefono___prefijo1-3dea179a-7681-484f-b602-b05804566e69_5325{
+        display: none;
+    }
+  }
+
+
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .hs_form___telefono___prefijo3{
+    display: inline-grid;
+    width: 44% !important;
+    label{
+      display: none;
+    }
+  }
+  .hs_form___telefono___prefijo4{
+    display: inline-grid;
+    width: 56% !important;
+    label{
+      display: none;
+    }
+  }
+  .hs_form___tipo_telefono .input ul{
+    //display: inline-flex;
+    display: contents;
+    li{
+      label{
+        width: 15px;
+        input{
+          width: 17px;
+        }
+      }
+    }
+  }
+  
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

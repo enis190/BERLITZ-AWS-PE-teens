@@ -1,0 +1,88 @@
+.titulo-1 {
+    font-family: 'IBMPlexSans-SemiBold';
+    color: $COLOR_1;
+    span {
+        font-family: 'IBMPlexSans-SemiBoldItalic';
+    }
+}
+
+.titulo-2 {
+    // font-family: 'MyriadPro-Regular_0';
+    font-family: 'TTFirsNeue-Regular';
+    font-size: 2rem !important;
+    margin-bottom: 20px;
+    color: #fff;
+
+    span {
+        color: $COLOR_1;
+    }
+
+    sup {
+        font-size: .9rem;
+    }
+}
+
+.btn-1 {
+    text-decoration: none;
+    background-color: $COLOR_3;
+    color: #FFF;
+    font-family: 'IBMPlexSans-Regular';
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: 0.3s !important;
+    padding: 13px 17px;
+    -webkit-box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.48);
+    box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.48);
+    border-radius: 7px;
+
+    span {
+        font-family: 'IBMPlexSans-Bold';
+    }
+
+
+    &:hover {
+        background-color: $COLOR_2;
+    }
+}
+
+.c-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.c-padding {
+    padding: 20px;
+}
+
+.c-container-small {}
+
+@mixin bg-degradado {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(1, 35, 70, 1) 69%);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .c-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .c-container {
+        // padding-left: 70px;
+        // padding-right: 70px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

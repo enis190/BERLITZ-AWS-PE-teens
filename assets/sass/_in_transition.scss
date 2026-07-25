@@ -1,0 +1,74 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .fade-in {
+        opacity: 0;
+        transition: opacity 0.8s ease-in-out;
+    }
+
+    .fade-in.active {
+        opacity: 1;
+    }
+
+    /* Efecto de arriba a abajo */
+    .fade-in-top {
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
+
+    .fade-in-top.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Efecto de abajo a arriba */
+    .fade-in-bottom {
+        opacity: 0;
+        transform: translateY(20px);
+        /* Cambiado a un valor positivo para empezar desde abajo */
+        transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
+
+    .fade-in-bottom.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+    /* Efecto de izquierda a derecha */
+    .fade-in-left {
+        opacity: 0;
+        transform: translateX(-20px);
+        transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
+
+    .fade-in-left.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    /* Efecto de derecha a izquierda */
+    .fade-in-right {
+        opacity: 0;
+        transform: translateX(20px);
+        transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
+
+    .fade-in-right.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

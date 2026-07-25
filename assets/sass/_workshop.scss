@@ -1,0 +1,30 @@
+.seccion_workshop{
+    border-top:20px solid #3CDF86;
+    position: relative;
+
+    &:before{
+        content: 'BONUS';
+        color: #00287A;
+        text-transform: uppercase;
+        font-family: 'IBMPlexSans-Bold';  
+        background-color: #3CDF86;
+        position: absolute;
+        top: -10px;
+        left: calc(50% - 450px);
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        border-radius: 15px;
+        z-index: 10;
+        padding: 5px 15px;
+        
+
+    }
+}
+
+@media (max-width:1200px){
+    .seccion_workshop{
+        &:before{
+            left: 50%;
+        }
+    }
+}

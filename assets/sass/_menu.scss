@@ -1,0 +1,79 @@
+.seccion_menu_desktop {
+    width: 100%;
+    background: #FFFFFF;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 54%, rgba(217, 241, 255, 1) 100%);
+    height: 70px;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 99;
+
+    @media (min-width: 992px) {
+        display: flex !important;
+    }
+    ul { 
+        width: 100%;
+        display: inline-flex;
+        list-style: none;
+        padding: 0px;
+        margin-bottom: 0px;
+        justify-content: center;
+        gap: 20px;
+
+        li{
+            margin-right: 11px;
+            transition: 0.3s !important;
+            a{
+                text-decoration: none;
+                color: #00287A;
+                text-transform: uppercase;
+                font-family: 'IBMPlexSans-Bold'; 
+                font-size: .85rem;
+                transition: 0.3s !important;
+                border-radius: 20px;
+                border:1px solid rgba(#ffffff, 0.0);
+                padding: 8px 10px;
+                height: 40px;
+                display: block;
+                &:hover, &.active{
+                    border-radius: 20px;
+                    border:1px solid #D9F1FF;
+                    background-color: #D9F1FF;
+                }
+                &.azul{
+                    background-color: #D9F1FF;
+                    color: #00287A;
+                    &:hover, &.active{
+                        border-radius: 10px;
+                        border:1px solid #D9F1FF;
+                        background-color: #D9F1FF;
+                    }
+                }
+            }
+        }
+    }
+    &.menu_estatico{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

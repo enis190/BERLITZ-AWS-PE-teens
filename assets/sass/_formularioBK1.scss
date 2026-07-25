@@ -1,0 +1,340 @@
+.seccion_formulario {
+    background-color: $COLOR_1;
+    .c-hs-form{
+        z-index: 1;
+    }
+    .txt {
+        &::before {
+            content: url('../img/bg_1.png');
+            position: absolute;
+            height: 50px;
+            width: 50px;
+
+            transform: scale(0.7);
+            margin-top: -40px;
+        }
+
+        h3 {
+            font-family: 'OpenSans-Regular';
+            color: #FFF;
+
+            span {
+                font-size: 4.9rem;
+                font-family: 'IBMPlexSans-SemiBoldItalic';
+                margin-top: -18px;
+                display: block;
+            }
+        }
+
+        h2 {
+            font-family: 'IBMPlexSans-SemiBoldItalic';
+            font-size: 1rem;
+            color: #fff;
+            margin-top: 10px;
+
+            span {
+                font-family: 'IBMPlexSans-Bold';
+                color: #FFF;
+                font-size: 5.9rem;
+                display: inline-flex;
+                background-color: $COLOR_4;
+                padding: 7px 15px;
+                border-radius: 15px;
+                margin-top: 10px;
+                animation: c_frm_keyframe_2 2s;
+                    -webkit-animation: c_frm_keyframe_2 2s;
+                    -moz-animation: c_frm_keyframe_2 2s;
+                    animation-iteration-count: infinite;
+                    -webkit-animation-iteration-count: infinite;
+                    -moz-animation-iteration-count: infinite;
+
+                .det {
+                    display: block;
+                }
+
+                .dscto {
+                    margin-left: 6px;
+                    font-size: 1.1rem;
+                    font-family: 'IBMPlexSans-Regular';
+
+                    .simbolo {
+                        display: block;
+                        font-family: 'IBMPlexSans-Bold';
+                        font-size: 2.4rem;
+                        margin-bottom: -8px;
+                        margin-top: 25px;
+                    }
+                }
+
+                &::before {
+                    content: url('../img/cursor_1.png');
+                    width: 50px;
+                    height: 50px;
+
+                    position: absolute;
+                    margin-left: 150px;
+                    margin-top: -30px;
+
+                    animation: c_frm_keyframe_1 2s;
+                    -webkit-animation: c_frm_keyframe_1 2s;
+                    -moz-animation: c_frm_keyframe_1 2s;
+                    animation-iteration-count: infinite;
+                    -webkit-animation-iteration-count: infinite;
+                    -moz-animation-iteration-count: infinite;
+
+                }
+            }
+        }
+
+        p {
+            &.completa {
+                color: #fff;
+                margin-top: 20px;
+                font-size: 1.2rem;
+
+                span {
+                    font-family: 'IBMPlexSans-SemiBoldItalic';
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .c-hs-form {
+        .hs-form-field {
+            margin-bottom: 10px;
+
+            label {
+                font-family: 'IBMPlexSans-Regular';
+                color: #fff;
+            }
+
+            .input {
+                .hs-input {
+                    width: 100%;
+                }
+
+                input,
+                select,
+                textarea {
+                    border: 0;
+                    border: 1px solid #DADADA;
+                    border-radius: 7px;
+                    padding: 7px 15px;
+                }
+            }
+
+            
+        }
+
+        .hs-error-msgs, .hs_error_rollup {
+            list-style: none;
+            padding-left: 0px;
+
+            li {
+
+                label {
+                    font-family: 'IBMPlexSans-Regular';
+                    color: #FFF !important;
+                    font-size: .7rem;
+                    opacity: .8;
+                    background-color: red;
+                    padding: 2px 5px;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .hs-form-booleancheckbox {
+            .hs-input {
+                width: auto !important;
+            }
+        }
+
+        .hs-fieldtype-booleancheckbox {
+
+            a {
+                color: #FFF;
+            }
+
+            ul {
+                list-style: none;
+            }
+
+            .hs-form-booleancheckbox {
+                input {
+                    position: absolute;
+                    margin-left: -20px;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .hs-submit {
+            .hs-button {
+                background-color: $COLOR_3;
+                color: #FFF;
+                border: 0;
+                font-family: 'IBMPlexSans-Bold';
+                padding: 10px 40px;
+                text-transform: uppercase;
+                border-radius: 7px;
+                width: 100%; 
+
+                -webkit-box-shadow: 10px 10px 14px -10px rgba(0, 0, 0, 0.44);
+                -moz-box-shadow: 10px 10px 14px -10px rgba(0, 0, 0, 0.44);
+                box-shadow: 10px 10px 14px -10px rgba(0, 0, 0, 0.44);
+
+                transition: 0.3s;
+
+                &:hover{
+                    background-color: $COLOR_2;
+                }
+            }
+        }
+
+        .form-columns-2,
+        .form-columns-1 {
+            max-width: 100%;
+        }
+
+    }
+}
+
+
+
+@keyframes c_frm_keyframe_1 {
+    0% {
+        transform: scale(0.7);
+    }
+
+    50% {
+        transform: scale(0.6);
+    }
+
+    100% {
+        transform: scale(0.7);
+    }
+}
+
+
+@keyframes c_frm_keyframe_2 {
+    0% {
+        background-color: #643BA3;
+        -webkit-box-shadow: inset 10px 10px 12px -7px rgba(0,0,0,0);
+-moz-box-shadow: inset 10px 10px 12px -7px rgba(0,0,0,0);
+box-shadow: inset 10px 10px 12px -7px rgba(0,0,0,0);
+    }
+
+    50% {
+        background-color: #643BA3;
+        -webkit-box-shadow: inset 10px 10px 6px -6px rgba(0,0,0,0.41);
+-moz-box-shadow: inset 10px 10px 6px -6px rgba(0,0,0,0.41);
+box-shadow: inset 10px 10px 6px -6px rgba(0,0,0,0.41);
+    }
+
+    100% {
+        background-color: #643BA3;
+        -webkit-box-shadow: inset 10px 10px 12px -7px rgba(0,0,0,0);
+-moz-box-shadow: inset 10px 10px 12px -7px rgba(0,0,0,0);
+box-shadow: inset 10px 10px 12px -7px rgba(0,0,0,0);
+    }
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .seccion_formulario {
+        .hs-input{
+            width: 100% !important;
+        }
+        .txt {
+            &::before {
+                transform: scale(0.4);
+            }
+
+            h3 {
+                text-align: center;
+                font-size: 1.5rem;
+
+                span {
+                    font-size: 3.5rem;
+                    margin-top: -10px;
+                }
+            }
+
+            h2 {
+                text-align: center;
+
+                span {
+                    &::before {
+                        margin-left: 105px;
+                        margin-top: -10px;
+                        transform: scale(0.4);
+                    }
+                }
+            }
+
+            p {
+                &.completa {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .seccion_formulario {
+        .txt {
+            &::before {}
+
+            h3 {
+                span {}
+            }
+
+            h2 {
+                span {
+                    &::before {
+                        margin-left: 100px;
+                        margin-top: -10px;
+
+                        transform: scale(0.4);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .seccion_formulario {
+        .txt {
+            &::before {}
+
+            h3 {
+                span {}
+            }
+
+            h2 {
+                span {
+                    &::before {
+                        margin-left: 140px;
+                        margin-top: 0px;
+
+                        transform: scale(0.6);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

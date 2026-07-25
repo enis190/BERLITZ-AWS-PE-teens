@@ -1,0 +1,309 @@
+.seccion_curso{
+    background-image: url("https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/kidsteens-curso-bg.png");
+    padding: 70px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    img{
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    .side{
+        padding-top: 20px;
+    }
+
+    .side_bottom{
+        margin-top: -320px;
+    }
+
+    h3{
+        font-family: 'IBMPlexSans-Regular';  
+        color: #ffffff;
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 50px;
+        text-align: center;
+
+        span{
+            font-family: 'IBMPlexSans-BoldItalic';  
+        }
+    }
+
+    .left_side{
+        .logo_curso{
+            max-width: 290px;
+            margin: 0 auto 25px;
+        }
+    }
+
+    .subtitulo{
+        font-family: 'IBMPlexSans-Bold'; 
+        color: #ffffff;
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .cursos_profesor_en_vivo{
+        width: 250px;
+        margin: 0 auto 50px;
+    }
+
+    .btn_iniciar{
+        width: 239px;
+        margin: 0 auto 50px;
+    }
+
+    .texto{
+        color: #ffffff;
+        font-size: 24px;
+        margin-bottom: 30px;
+        font-family: 'IBMPlexSans-Regular';  
+
+        span{
+            font-family: 'IBMPlexSans-Bold';  
+        }
+    }
+
+
+    .lista_items{
+        width: 100%;    
+        border-radius: 28px;
+        margin-bottom: 15px;
+
+        article{
+            border-bottom: 1px solid rgba(#7618BE, 0.5);
+            padding: 15px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 14px;
+            margin-bottom: 20px;
+
+            .texto{
+                font-size: 17px;
+                line-height: 19px;
+                color: #00287A;
+                font-family: 'IBMPlexSans-Regular'; 
+                max-width: 275px;
+                text-align: left;
+
+                span{
+                    font-size: 19px;
+                    font-family: 'IBMPlexSans-Bold';
+                }
+            }
+
+            img{
+                width: 130px;
+            }
+
+            
+        }
+
+        article.bottom_article{
+            border-bottom: 0;
+        }
+    }
+}
+
+@media (max-width:990px){
+    .seccion_curso{
+        .lista_items{
+            margin-bottom: 35px;
+        }
+        
+        .side_bottom{
+            margin-top: 0;
+        }
+    }
+}
+
+
+
+
+
+.marquesina {
+  
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    position: relative;
+    padding-top: 50px;
+
+    // Fade lateral (opcional, se ve pro)
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 40px;
+        pointer-events: none;
+        z-index: 2;
+    }
+
+    &::before {
+        left: 0;
+        background: linear-gradient(to right, #7618BE, transparent);
+    }
+
+    &::after {
+        right: 0;
+        background: linear-gradient(to left, #7618BE, transparent);
+    }
+
+    &__track {
+        display: flex;
+        width: max-content;
+        animation: scroll 25s linear infinite;
+    }
+
+    &__content {
+        display: flex;
+        gap: 34px;
+        padding-right: 34px;
+
+        span {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        }
+    }
+
+    &:hover {
+        &__track {
+        animation-play-state: paused;
+        }
+    }
+}
+
+/* Animación */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .marquesina {
+    &__track {
+      animation: none;
+    }
+  }
+}
+
+@media (max-width:1000px){
+    .seccion_curso {
+        padding-bottom: 30px;
+        .texto {
+            text-align: center;
+        }  
+    }
+}
+
+@media (max-width:768px){
+
+    .seccion_curso{
+        background-image: url('https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kidsteens-13-16-curso-bg-mob.png');
+        background-repeat: no-repeat;
+        background-position: center top;
+        padding-top: 390px;
+        overflow: hidden;
+        background-size: contain;
+        background-color: #743CFF;
+
+        .side{
+            padding-top: 90px;
+        }
+
+        h3{
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 30px;
+        }
+
+        .subtitulo{
+            font-family: 'IBMPlexSans-Regular';  
+            font-size: 24px;
+        }
+        .lista_items {
+            article {
+                img{
+                    max-width: 130px;
+                }
+
+                .texto {
+                    font-size: 14px;
+                    span{
+                        font-size: 17px;
+                    }
+                }
+
+            }
+            article.bottom_article{
+                border-bottom: 1px solid rgba(#7618BE, 0.5);
+            }
+
+            article.bottom_article.last_article{
+                border-bottom: 0;
+            }
+        }
+
+        .left_side{
+
+            .cursos_profesor_en_vivo{
+                max-width: 350px;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+
+
+        
+    }
+    .marquesina{
+        background-color: #A227E0;
+        padding-top: 15px;
+        padding-bottom: 40px;
+
+        &::before {
+            left: 0;
+            background: linear-gradient(to right, #A227E0, transparent);
+        }
+
+        &::after {
+            right: 0;
+            background: linear-gradient(to left, #A227E0, transparent);
+        }
+
+        &__track {
+            animation: scroll 50s linear infinite;
+        }
+    }
+}
+
+@media (max-width:620px){
+    .seccion_curso{
+        padding-top: 270px;
+    }
+}
+
+
+
+@media (max-width:420px){
+    .seccion_curso{
+        padding-top: 230px;
+    }
+}

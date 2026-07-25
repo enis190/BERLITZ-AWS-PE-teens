@@ -1,0 +1,339 @@
+.banner_principal{    
+    width: 100%;
+    height: auto;
+    /*max-height: 720px;*/
+    position: relative;
+    overflow: hidden;
+    background-color: #0292FD; 
+
+    .fondo{
+        background-size: cover;
+        background-position: center top;
+        padding-top: 40px;
+    }
+
+    .container{
+        max-width: 1200px;
+    }
+
+    
+
+    *{
+        box-sizing: border-box;
+    }
+
+    img{
+        width: 100%;
+        display: block;
+        height: auto; 
+    }
+
+    .tienes_el_talento{
+        padding-top: 110px;
+        width: 482px;
+        margin: 0 auto;
+
+    }
+
+    .estrella_left{
+        width: 156px;
+        position: absolute;
+        bottom:140px;
+        left: 0;
+    }
+
+    /*.muneco{
+        width: 172px;
+        position: absolute;
+        bottom:50px;
+        left: 50px;
+    }*/
+
+   
+
+    .left_side.left_side_static{     
+
+        @media (min-width:768px){
+            margin-top: 55px;
+        }
+    }
+
+    .persona{
+        img.personas_mob{
+            display: none;
+        }
+
+        img{
+            margin-left: -40px;
+        }
+
+        @media (max-width:768px){
+            img.personas_dsk{
+                display: none;
+            }
+            img.personas_mob{
+                display: block;
+            }
+
+            img{
+                margin-left: auto;
+            }
+        }        
+    }
+
+    .left_side{
+        width: 100%;
+        margin-top: -960px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .subtitulo{
+            width: 100%;
+            color: #ffffff;
+            font-size: 50px;
+            font-family: 'IBMPlexSans-Bold';  
+            text-align: center;
+            margin-bottom: 30px;
+            letter-spacing: -0.5px;
+            z-index: 5;
+            line-height: 46px;
+
+            img{
+                display: inline;
+            }
+
+            img.palabra_ingles{
+                max-width: 140px;
+            }
+
+            span{
+                font-family: 'IBMPlexSans-BoldItalic';  
+                display: inline;
+                position: relative;
+
+                .flecha{
+                    width: 165px;
+                    height: auto;
+                    position: absolute;
+                    top: calc(100% + -11px);
+                    right: -13px;
+                    
+
+                    img{
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .logo, .titular{           
+            width: 560px;
+            margin-bottom: 15px;
+            z-index: 5;
+
+            img{
+                margin-left: 30px;
+            }
+        }
+
+        .hashtag{
+            width: 325px;
+            margin-bottom: 35px;
+            z-index: 5;
+        }
+        
+        .cta{
+            width: 239px;
+            z-index: 5;
+        }
+    }
+    
+    .barra_inferior_banner{
+        text-align: center;
+        width: 100%;
+        height: 57px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-size: 27px;
+        font-family: 'IBMPlexSans-Bold';  
+        font-weight: 700;
+        position: relative;
+        z-index: 10;
+
+        span.bolder{
+            font-family: 'IBMPlexSans-BoldItalic';              
+        } 
+
+        span{
+            padding: 0 5px;
+        }
+
+        img{
+            width: 113px;
+            margin-left: 10px;
+        }
+    }
+
+
+    .lazo_left{
+        position: absolute;
+        bottom:0;
+        left: 0;
+    }
+    .lazo_central{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+
+}
+
+@media (max-width:1024px){
+    .banner_principal  {
+
+        .left_side {
+            .subtitulo{
+                width: 100%;
+                color: #ffffff;
+                font-size: 44px;
+
+                img.palabra_ingles {
+                    max-width: 121px;
+                }
+            }
+        }
+
+        .left_side.left_side_static {
+            margin-top: 80px;
+        }
+    }    
+}
+
+@media (max-width:768px){
+    .banner_principal {
+        height: auto;
+        
+
+        .fondo{
+            padding-top: 0px;
+        }
+
+        .container{
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .tienes_el_talento{
+            width: 90%;
+            max-width: 395px;
+        }
+
+        .persona{
+            z-index: 3;
+        }
+
+        .left_side{
+            margin-top: -2px;
+            position: relative;
+            padding-top: 10px;
+
+            &:before{
+                content: '';
+                width: 120%;
+                height: 424px;
+                background: #8c8dfe;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%);
+            }
+
+            .subtitulo{
+                font-size: 46px;
+                line-height: 37px;
+
+                
+
+                img.palabra_ingles{
+                    max-width: 122px;
+                }
+
+                span{
+                    .flecha{
+                        width: 140px;
+                        top: calc(100% + -7px);
+                        right: -5px;
+                    }
+                }
+            }
+
+            .logo, .titular{
+                width: 295px;
+            }
+
+            .cta{
+                margin-bottom: 30px;
+            }
+
+            .hashtag{
+                width: 206px;
+            }
+        }
+
+        .left_side.left_side_static{
+            margin-top: 0;
+        }
+
+        .muneco{
+            display: none;
+        }
+
+        .estrella_left{
+            width: 106px;
+            bottom: 48%;
+        }
+
+        .lazo_left{
+            left: -72px;
+            width: 150px;
+            bottom:30px
+        }
+
+        .barra_inferior_banner{
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width:576px){
+    .banner_principal{
+
+        .fondo{
+            padding-top: 82px;
+        }
+
+        .estrella_left{
+            bottom: 51%;
+        }
+
+         .left_side {
+            .subtitulo{
+                font-size: 26px;
+                line-height: 21px;
+
+                img.palabra_ingles{
+                    max-width: 76px;
+                }
+            }
+
+            
+        }
+    }
+    
+}

@@ -1,0 +1,74 @@
+
+.seccion_metodo{
+    background-color: #fff;
+    background-image: url("https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/kidsteens-metodo-bg.png");
+    background-position: left top;
+    background-size: cover;
+}
+
+.metodo{
+    
+    
+       
+        h3{
+            font-family: 'IBMPlexSans-Bold'; 
+            color: #032059;
+            font-size: 1.5rem;
+        }
+        
+    
+    p{
+        color: #00287A;
+        font-size: 1.2rem;
+        line-height: 22px;
+
+        strong{
+            font-family: 'IBMPlexSans-Bold';  
+        }
+
+        &.sup{
+            color: #000;
+            font-size: 1.2rem;
+            font {
+                font-family: 'IBMPlexSans-Bold';  
+                &.azul{
+                    color: $COLOR_1;
+                }
+            }
+        }
+        &.mt-4{
+            font-size: .95rem;
+        }
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+@media (max-width:574px){
+    picture{
+        img{margin-bottom: 25px;}
+    }
+
+    .metodo{
+        h3{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    }
+}
